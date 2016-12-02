@@ -1,0 +1,62 @@
+[alias]
+    amend = commit --amend
+    amendc = commit --amend -C HEAD
+    ap  = add -p
+    br  = branch
+    cf  = cat-file -p
+    cm  = commit -m
+    co  = checkout
+    cop  = checkout -p
+    cp  = cherry-pick
+    d   = diff
+    dc  = diff --cached
+    dcn = diff --cached --name-only
+    ds  = diff --stat
+    lc  = log --pretty=format:'%aN %aE' --abbrev-commit --date=relative
+    lg  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit --date=relative
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lp  = log -p
+    nf  = log --diff-filter=A --name-only --pretty=oneline --abbrev-commit
+    ra  = rebase --abort
+    rc  = rebase --continue
+    ri  = rebase --interactive
+    rma  = rebase master
+    rp  = reset -p
+    rs  = rebase --skip
+    s   = show
+    sl  = log --pretty=oneline --abbrev-commit
+    sld = log --pretty=oneline --abbrev-commit --graph --decorate
+    sn  = show --name-only --pretty="format:"
+    st  = status -s
+    stk = status -s | grep -v '^??' # machpas
+
+    ribbon = tag --force _ribbon origin/master
+    catchup = log --patch --reverse --topo-order _ribbon..origin/master
+
+    deleteremote = push myfork :branchname
+    showsha = show sha1:path_rel_to_.git
+    pushf = push origin +master
+    newfiles = log --diff-filter=A --summary
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[credential]
+	helper = cache --timeout=3600
+[core]
+    filemode = false
+[user]
+	email = cgragnic@netc.fr
+	name = Christophe Gragnic
