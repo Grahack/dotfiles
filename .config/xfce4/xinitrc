@@ -1,5 +1,7 @@
 #!/bin/sh
 
+setxkbmap fr bepo
+
 # fix broken $UID on some system...
 if test "x$UID" = "x"; then
   if test -x /usr/xpg4/bin/id; then

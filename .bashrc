@@ -123,5 +123,4 @@ fi
 if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
-setxkbmap fr bepo
 mkdir -p ~/.vim-tmp
