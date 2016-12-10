@@ -123,6 +123,7 @@ fi
 if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
+export EDITOR=vim
 mkdir -p ~/.vim-tmp
 PRJ="/home/chri/prj"
 export PATH=$PATH:$PRJ/scripts/
