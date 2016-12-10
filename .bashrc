@@ -124,3 +124,7 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 mkdir -p ~/.vim-tmp
+PRJ="/home/chri/prj"
+export PATH=$PATH:$PRJ/scripts/
+export PATH=$PATH:$PRJ/microalg/microalg/emulisp/
+export PATH=$PATH:$PRJ/microalg/microalg/ersatz/
