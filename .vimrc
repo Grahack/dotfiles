@@ -41,7 +41,7 @@ autocmd InsertEnter * let w:last_fdm=&foldmethod | setlocal foldmethod=manual
 autocmd InsertLeave * let &l:foldmethod=w:last_fdm
 
 if !empty(system("setxkbmap -print|grep bepo"))
-    source .bepo.vim
+    source $HOME/.bepo.vim
 endif
 
 let g:lisp_rainbow = 1
